@@ -17,10 +17,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WeatherVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RainyShiny" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WeatherVC" customModule="RainyShiny" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,25 +29,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="gLu-GO-YGT">
-                                        <rect key="frame" x="10" y="28" width="355" height="191"/>
+                                        <rect key="frame" x="10" y="28" width="355" height="173.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0LC-q9-bhP">
-                                                <rect key="frame" x="0.0" y="0.0" width="187" height="191"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="173.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS1-Gz-QzQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="41"/>
-                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XX2-FV-bah">
-                                                        <rect key="frame" x="0.0" y="51" width="187" height="89"/>
+                                                        <rect key="frame" x="0.0" y="33.5" width="187" height="89"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="65"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yz-Z6-juF">
-                                                        <rect key="frame" x="0.0" y="150" width="187" height="41"/>
+                                                        <rect key="frame" x="0.0" y="132.5" width="187" height="41"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -55,13 +55,13 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="q8S-wI-UIW">
-                                                <rect key="frame" x="187" y="0.0" width="168" height="154"/>
+                                                <rect key="frame" x="187" y="0.0" width="168" height="136.5"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nte-ha-pEj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168" height="100"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="Clouds" translatesAutoresizingMaskIntoConstraints="NO" id="nte-ha-pEj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="168" height="83"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4L-nq-Q3j">
-                                                        <rect key="frame" x="0.0" y="120" width="168" height="34"/>
+                                                        <rect key="frame" x="0.0" y="103" width="168" height="33.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -87,7 +87,7 @@
                                 <rect key="frame" x="0.0" y="226" width="375" height="441"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="tUH-mp-8cP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="70" id="tUH-mp-8cP" customClass="WeatherCell" customModule="RainyShiny" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tUH-mp-8cP" id="pbS-2S-CQG">
@@ -151,6 +151,14 @@
                                                 <constraint firstItem="AEw-Mo-tgt" firstAttribute="top" secondItem="pbS-2S-CQG" secondAttribute="top" id="pR6-9Y-0Gw"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="RYR-kl-ve7" id="T7f-CZ-nDt"/>
+                                            <outlet property="highTemp" destination="Tx2-cD-odW" id="fDK-Jb-uF3"/>
+                                            <outlet property="lowTemp" destination="WkB-Cf-mNi" id="Rr0-Uu-jPS"/>
+                                            <outlet property="weatherIcon" destination="ccD-nD-Dns" id="cjp-qw-b2l"/>
+                                            <outlet property="weatherType" destination="k9W-ji-Ap6" id="iGB-na-oM6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -166,10 +174,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="currentTempLabel" destination="XX2-FV-bah" id="QGf-VR-T8a"/>
+                        <outlet property="currentWeatherImage" destination="nte-ha-pEj" id="jVK-w2-kuE"/>
+                        <outlet property="currentWeatherTypeLabel" destination="y4L-nq-Q3j" id="R6W-Ck-xQW"/>
+                        <outlet property="dateLabel" destination="SS1-Gz-QzQ" id="EGU-Ut-pBk"/>
+                        <outlet property="locationLabel" destination="7Yz-Z6-juF" id="xk8-W7-JqA"/>
+                        <outlet property="tableView" destination="PCO-s6-Gfs" id="SPR-Ye-zoU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clouds" width="92" height="68"/>
+    </resources>
 </document>

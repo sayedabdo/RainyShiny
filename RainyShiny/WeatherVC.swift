@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WeatherVC.swift
 //  RainyShiny
 //
 //  Created by Sayed Abdo on 2/4/18.
@@ -50,6 +50,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             currentLocation = locationManager.location
             Location.sharedInstance.latitude = currentLocation.coordinate.latitude
             Location.sharedInstance.longitude = currentLocation.coordinate.longitude
+            
             currentWeather.downloadWeatherDetails {
                 self.downloadForecastData {
                     self.updateMainUI()
